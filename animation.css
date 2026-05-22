@@ -1,0 +1,101 @@
+.entire{
+    display: block;
+    height: 100vh;
+    align-content: center;
+
+}
+
+.entire h1{
+    font-size: 40px ;
+}
+
+.container{
+    
+    display: block;
+    justify-self: center;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: pink;
+}
+
+button{
+    padding: 12px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 12px 10px 2px rgb(237, 176, 188);
+}
+
+#noBtn{
+    border: rgb(255, 238, 238) solid;
+    color: white;
+    background-color: rgb(251, 204, 212);
+}
+
+
+
+
+
+.noReminder{
+    display: none;
+    margin-left:200px;
+    position: absolute;
+    background: rgb(240, 210, 215);
+    max-width:300px;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+.noReminderVisible{
+    display: block;
+}
+
+.exit{
+    display: none;
+}
+
+
+.but{
+   position: absolute;
+   display: none;
+   margin-left: 120px;
+   background: rgb(255, 239, 242);
+   width: 200px;
+   padding: 12px;
+   border-radius: 12px;
+}
+
+.butVisible{
+    display: block;
+}
+
+.ily{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 20, 63);
+    color: blanchedalmond;
+    padding: 12px;
+    border-radius: 12px;
+
+}
+
+.ilyVisible{
+    display: block;
+}
+
+.ily h1{
+    font-size: 120px;
+    margin: 0;
+}
+
+.btnContainer{
+    align-content: center;
+    justify-self: center;
+    height: 20vh;
+}
