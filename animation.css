@@ -42,18 +42,23 @@ button:hover{
 
 
 .noReminder{
-    display: none;
+
     margin-left:200px;
     position: absolute;
     background: rgb(240, 210, 215);
     max-width:300px;
     padding: 20px;
     border-radius: 12px;
+    transition: transform 0.3s ease , opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
 
 }
 
 .noReminderVisible{
-    display: block;
+    visibility: visible;
+    transform: translateX(5px);
+    opacity: 1;
 }
 
 .exit{
@@ -63,35 +68,134 @@ button:hover{
 
 .but{
    position: absolute;
-   display: none;
    margin-left: 120px;
    background: rgb(255, 239, 242);
    width: 200px;
    padding: 12px;
    border-radius: 12px;
+   visibility: hidden;
+   opacity: 0;
+   transition: transform 0.2s ease-in , opacity 0.3s ease;
+   
+}
+
+@keyframes butanimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-5deg);
+    }
+
+    50%{
+        transform:rotate(5deg);
+    }
+
+    75%{
+        transform:rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 .butVisible{
-    display: block;
+   animation: butanimation 0.4s ease-in-out infinite;
+   visibility: visible;
+   transform: translateY(-20px);
+   opacity: 1;
 }
 
 .ily{
-    display: none;
+    
     position: absolute;
     background-color: rgb(255, 20, 63);
     color: blanchedalmond;
     padding: 12px;
     border-radius: 12px;
-
+    visibility: hidden;
+    transition: transform 0.4s ease-in-out;
+    opacity: 0;
 }
 
 .ilyVisible{
-    display: block;
+    visibility: visible;
+    transform: translateY(-20px);
+    opacity: 1;
 }
 
 .ily h1{
     font-size: 120px;
     margin: 0;
+}
+
+.pangarap{
+    position: absolute;
+    visibility: hidden;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 12px;
+    animation: pangarapAnimation 5.5s ease-in-out infinite;
+    
+}
+
+@keyframes pangarapAnimation{
+    0%{
+        
+        transform: translateY(-100px) rotate(0deg)   ;
+    }
+
+    5%{
+        transform: translateY(-100px) rotate(-10deg) scale(1.1);
+    }
+
+    10%{
+        transform: rotate(10deg) scale(1.2);
+    }
+
+    20%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+
+    30%{
+        transform: rotate(10deg) scale(1.2);
+    }
+
+    40%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+
+    50%{
+        transform: rotate(10deg) scale(1.2);
+    }
+
+     60%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+
+     70%{
+        transform: rotate(10deg) scale(1.2);
+    }
+
+     80%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+
+     90%{
+        transform: rotate(10deg) scale(1.2);
+    }
+
+     100%{
+        transform: rotate(0deg) translateY(-100px);
+    }
+}
+
+
+
+.pangarapVisible{
+    visibility: visible;
+    
 }
 
 .btnContainer{
